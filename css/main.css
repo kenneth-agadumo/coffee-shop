@@ -5,6 +5,7 @@
     --color-secondary: #2F2105;
     --color-neutral: #F9D9AA;
     --color-neutral2: #F6EBDA;
+    --color-light: #7E7D7A;
 }
 .active{
     color: var(--color-primary)
@@ -26,25 +27,34 @@ a{
     display: flex;
     justify-content: space-evenly;
     grid-template-columns: 12rem 40rem 25rem;
-    padding: 2.56rem 0;
+    padding: 1rem 0;
     position: absolute;
     z-index: 1;
 }
+.logo{
+    display: flex;
+    align-items: center;
+}
 
+nav{
+    display: flex;
+    align-items: center;
+}
 .logo img{
     width: 9rem;
-    height: 1.5rem;
+    height: 1.7rem;
 }
 
 .nav ul li{
     display: inline;
-    margin: 1rem;
+    margin: 0.7rem;
     font-size: 16px;
 }
 
 .right-bar{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .search input{
@@ -67,17 +77,17 @@ a{
     overflow: hidden;
 }
 .img1{
-    width: 35rem;
-    height: 24rem;
+    width: 30rem;
+    height: 22rem;
     position: absolute;
-    top: 65%;
+    top: 68%;
 }
 .img2{
-    width: 35rem;
-    height: 24rem;
+    width: 30rem;
+    height: 22rem;
     position: absolute;
     left: 65%;
-    top: -40px;
+    top: -35px;
     
 }
 
@@ -86,17 +96,82 @@ a{
     height: 100vh;
 }
 
+.left-content{
+    position: absolute;
+    top: 22%;
+    left: 7%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.left .title{
+    font-size: 41.8px;
+    font-weight: 500;
+}
+.title, .p-text, .button-group{
+    width: 100%;
+}
+.title h1{
+    width: 30rem;
+    color: var(--color-secondary);
+}
+
+.p-text p{
+    width: 22rem;
+    font-size: 16px;
+    color: var(--color-light);
+}
+
+.button-group{
+    margin-top: 10px;
+}
+
+.button-group .order{
+    box-sizing: border-box;
+    width: 10.6rem;
+    height: 2.8rem;
+    border: none;
+    border-radius: 33px;
+    padding: 10px;
+    background: var(--color-secondary);
+    color: white;
+}
+
+.button-group .menu{
+    box-sizing: border-box;
+    width: 10.6rem;
+    height: 2.8rem;
+    border: none;
+    background: none;
+    color: var(--color-primary);
+}
+
+
 .right{
     display: flex;
 
 }
 .right .img-circle{
-    width: 26rem;
-    height: 26rem;
+    width: 24rem;
+    height: 24rem;
     border-radius: 50%;
-    background: #2F2105;
+    background: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    top: 158px;
-    left: 50px;
+    top: 130px;
+    right: -132px;
     z-index: 1;
+}
+
+.img-circle .watermark{
+    width: 23rem;
+    opacity: 0.8;
+}
+
+.img-circle .img{
+    position: absolute;
+    top: -12px;
 }
