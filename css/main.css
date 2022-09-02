@@ -32,14 +32,14 @@ a{
 }
 
 .logo img{
-    width: 9.3rem;
-    height: 1.875rem;
+    width: 9rem;
+    height: 1.5rem;
 }
 
 .nav ul li{
     display: inline;
     margin: 1rem;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .right-bar{
@@ -48,7 +48,7 @@ a{
 }
 
 .search input{
-    width: 222px;
+    width: 13rem;
     height: 35px;
     border-radius: 17px;
     border: none;
@@ -67,16 +67,36 @@ a{
     overflow: hidden;
 }
 .img1{
-    width: 35.5rem;
-    height: 24.6rem;
+    width: 35rem;
+    height: 24rem;
     position: absolute;
-    top: 60%;
+    top: 65%;
 }
 .img2{
-    width: 35.5rem;
-    height: 24.6rem;
+    width: 35rem;
+    height: 24rem;
     position: absolute;
-    left: 60%;
-    top: -45px;
+    left: 65%;
+    top: -40px;
     
+}
+
+.left, .right{
+    width: 50%;
+    height: 100vh;
+}
+
+.right{
+    display: flex;
+
+}
+.right .img-circle{
+    width: 26rem;
+    height: 26rem;
+    border-radius: 50%;
+    background: #2F2105;
+    position: relative;
+    top: 158px;
+    left: 50px;
+    z-index: 1;
 }
