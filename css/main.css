@@ -211,12 +211,12 @@ nav{
 .popular{
     width: 100%;
     margin-bottom: 300px;
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
+    
 }
 .pop-title{
     width: 100%;    
@@ -228,6 +228,11 @@ nav{
     /* clip-path: polygon(0 19%, 100% 43%, 100% 100%, 0% 100%); */
     border-radius: 64px;
     padding: 0 20px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+
 }
 .content-shell{
     width: var(--shell-dimensions);
@@ -238,7 +243,7 @@ nav{
     box-shadow: -2px 19px 32px 0px rgba(48,45,38,0.19);
 -webkit-box-shadow: -2px 19px 32px 0px rgba(48,45,38,0.19);
 -moz-box-shadow: -2px 19px 32px 0px rgba(48,45,38,0.19);
- 
+transform: translateY(-100px);
 }
 .popular-content{
     background: white;
@@ -248,11 +253,34 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+    gap: 8px;
+    /* position: relative; */
     padding-top:15px ;
 }
 
 .popular-content img{
     width: 90%;
     border-radius: 12px;
+}
+
+.sub1{
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100% ;
+}
+
+.sub2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sub2 .span1 button{
+    padding: 3px 7px;
+    border: 2px solid var(--color-primary);
+    background: white;
+    color: var(--color-primary);
+    border-radius: 5px;
 }
