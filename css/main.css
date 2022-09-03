@@ -6,6 +6,8 @@
     --color-neutral: #F9D9AA;
     --color-neutral2: #F6EBDA;
     --color-light: #7E7D7A;
+    --shell-dimensions : fit-content;
+    --shell-padding: 1.3% 0.5%;
 }
 .active{
     color: var(--color-primary)
@@ -14,7 +16,8 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: 'Poppins', sans-serif;;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 a{
     text-decoration: none;
@@ -67,6 +70,9 @@ nav{
     -moz-box-shadow: 7px 2px 24px 0px rgba(0,0,0,0.13);
 }
 
+.main{
+    overflow: hidden;
+} 
 
 .landing-page{
     width: 100vw;
@@ -174,4 +180,79 @@ nav{
 .img-circle .img{
     position: absolute;
     top: -12px;
+}
+.tag1-shell, .tag2-shell, .tag3-shell{
+    width: var(--shell-dimensions);
+    height: var(--shell-dimensions);
+    padding: var(--shell-padding);
+    position: absolute;
+    border-radius: 50px;
+    z-index: 2;
+    background: rgba(255,255,255,0.4);
+    backdrop-filter: blur(4px);
+    box-shadow: -2px 19px 32px 0px rgba(48,45,38,0.19);
+-webkit-box-shadow: -2px 19px 32px 0px rgba(48,45,38,0.19);
+-moz-box-shadow: -2px 19px 32px 0px rgba(48,45,38,0.19);
+    
+
+}
+.tag, .tag1, .tag2, .tag3{
+    box-sizing: border-box;
+    padding: 12px;
+    background: white;
+    border-radius: 50px;
+}
+
+
+.tag1-shell{top: 24.5%; left: 60%;}
+.tag2-shell{top: 50%; left: 60%;}
+.tag3-shell{top: 30%; left: 87%;}
+
+.popular{
+    width: 100%;
+    margin-bottom: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.pop-title{
+    width: 100%;    
+}
+
+.popular-section{
+    width: 85%;
+    background: var(--color-neutral);
+    /* clip-path: polygon(0 19%, 100% 43%, 100% 100%, 0% 100%); */
+    border-radius: 64px;
+    padding: 0 20px ;
+}
+.content-shell{
+    width: var(--shell-dimensions);
+    padding: 10px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(4px);
+    box-shadow: -2px 19px 32px 0px rgba(48,45,38,0.19);
+-webkit-box-shadow: -2px 19px 32px 0px rgba(48,45,38,0.19);
+-moz-box-shadow: -2px 19px 32px 0px rgba(48,45,38,0.19);
+ 
+}
+.popular-content{
+    background: white;
+    border-radius: 12px;
+    width: 16rem;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top:15px ;
+}
+
+.popular-content img{
+    width: 90%;
+    border-radius: 12px;
 }
